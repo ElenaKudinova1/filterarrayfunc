@@ -5,5 +5,6 @@ static string[] GetFilteredArray(string[] Arr) {
     string str = Console.ReadLine();
     string[] arrayFromString = str.Split(' ');
     Console.WriteLine(arrayFromString);
-    return arrayFromString;
+    string[] filteredArray = arrayFromString.Where(str => str.Length <= 3).ToArray();
+    return filteredArray;
 }
