@@ -1,6 +1,4 @@
-﻿string[] unFilteredArray = {"1234", "1567", "-2", "computer science"};
-
-void GetFilteredArray(string[] Arr) {
+﻿void GetFilteredArray() {
     Console.WriteLine ("Введите массив: ");
     string str = Console.ReadLine();
     string[] arrayFromString = str.Split(' ');
@@ -9,4 +7,4 @@ void GetFilteredArray(string[] Arr) {
         Console.WriteLine(filteredArray[i]);
     }
 }
-GetFilteredArray(unFilteredArray);
+GetFilteredArray();
